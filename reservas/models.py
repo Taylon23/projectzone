@@ -33,6 +33,7 @@ class ReservaModel(models.Model):
     curso = models.ForeignKey(CursoModel, on_delete=models.PROTECT)
     projetor = models.ForeignKey(ProjetorModel, on_delete=models.PROTECT)
     data = models.DateField()
+    create_data = models.DateField(auto_now_add=True)
     horario = MultiSelectField(
         choices=choices.HORARIO_CHOICES, max_choices=9, max_length=50)
     turmas = models.ManyToManyField(TurmaModel)
@@ -41,12 +42,12 @@ class ReservaModel(models.Model):
     
     def marca_como_entregue(self):
         #Adicionar o código para marcar que o projetor foi entregue para o projetor.
-        self.concluida = True
+        self.entregue = True
         self.save()
     
     def desmarca_como_entregue(self):
         #Adicionar o código para marcar que o projetor não foi entregue para o projetor.
-        self.concluida = False
+        self.entregue = False
         self.save()
         
     def marca_como_devolvido(self):
@@ -58,3 +59,6 @@ class ReservaModel(models.Model):
         #Adicionar o código para marcar projetor como não devolvido para gestao.
         self.devolucao = False
         self.save()
+        
+    def __str__(self):
+        return f'Usuario: {self.usuario} Projetor: {self.projetor} Data da reserva: {self.data} Criação da reserva: {self.create_data}'
