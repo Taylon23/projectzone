@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <!-- Titulo da pagina -->
+    {% block title%}
+    {% endblock %}
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Link Fontawesomefree -->
+    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+    <!-- Links extras -->
+    {% block extra_head %}
+    {% endblock %}
+</head>
+
+<body>
+    {% block header %}
+    <header>
+        <nav id="NavBar">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'img/logo-project-zone.png' %}" alt="logo-marca" id="logomarca">
+            </a>
+            {% if user.is_authenticated %}
+            <div id="menu-toggle" class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="menu-topo">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'tabela_reserva' %}">Minhas Reservas</a></li>
+                <li><a href="{% url 'agendar-create' %}">Agendar Reserva</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#" id="logout">Sair</a></li>
+            </ul>
+            {% endif %}
+        </nav>
+    </header>
+    {% endblock %}
+
+    <main id="content">
+        {% block content %}
+        {% endblock %}
+    </main>
+    {% block rodape %}
+    <footer id="Rodape">
+        <p>&copy; Todos os direitos reservados para Project Zone</p>
+        <p>
+            <a href="#" class="link_footer">Política de privacidade </a>|
+            <a href="#" class="link_footer">Termos de uso do website </a>|
+            <a href="#" class="link_footer">Mapa do site</a>
+        </p>
+    </footer>
+    {% endblock %}
+</body>
+<script src="{% static 'js/jquery-3.6.3.min.js' %}"></script>
+<script src="{% static 'js/menu-toggle.js' %}"></script>
+<script src="{% static 'js/logout.js' %}"></script>
+
+{% block script %}
+
+{% endblock %}
+
+
+</html>

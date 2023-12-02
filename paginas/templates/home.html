@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title%}
+<title>Home</title>
+{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+{% block content %}
+<div id="Conteudo">
+    <div id="content-conteudo">
+        <div id="content-titulo-conteudo">
+            <h1>Bem-vindo ao <span>Project Zone</span></h1>
+        </div>
+        <div id="content-reservar-projetor">
+            <div>
+                <p>Reserve agora seu projetor de maneira mais rápida e fácil</p>
+            </div>
+            <div><img src="{% static 'img/Logo-projetor.png' %}" alt="logo-projetor"></div>
+            <a href="{% url 'reserva-create' %}">
+                <div id="button-reservar">
+                    <p>Agendar para hoje</p> <i class="fas fa-arrow-right"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

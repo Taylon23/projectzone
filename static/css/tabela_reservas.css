@@ -1,0 +1,50 @@
+.reservas-table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.reservas-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0; /* Removido o margin-bottom para evitar duplicação */
+}
+
+.reservas-table caption {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.reservas-table th,
+.reservas-table td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.reservas-table th {
+  background-color: #c8d7f6;
+}
+
+.reservas-table td:last-child {
+  text-align: center;
+}
+
+.reservas-table td a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 5px;
+}
+
+.reservas-table td a i {
+  font-size: 1.2em;
+  transition: all 0.3s ease-in-out;
+}
+
+#edit-icon:hover {
+  color: #28a745;
+}
+
+#trash-icon:hover {
+  color: #dc3545;
+}

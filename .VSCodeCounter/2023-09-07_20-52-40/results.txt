@@ -1,0 +1,125 @@
+Date : 2023-09-07 20:52:40
+Directory : c:\Users\taylo\datashow_tcc
+Total : 74 files,  1909 codes, 141 comments, 466 blanks, all 2516 lines
+
+Languages
++-----------------+------------+------------+------------+------------+------------+
+| language        | files      | code       | comment    | blank      | total      |
++-----------------+------------+------------+------------+------------+------------+
+| Django Template |         34 |        647 |          0 |        199 |        846 |
+| JavaScript      |          5 |        603 |         67 |         89 |        759 |
+| Python          |         33 |        425 |         74 |        173 |        672 |
+| Database        |          1 |        232 |          0 |          3 |        235 |
+| Markdown        |          1 |          2 |          0 |          2 |          4 |
++-----------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                            | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                               |         74 |      1,909 |        141 |        466 |      2,516 |
+| . (Files)                                                                       |          3 |        249 |          3 |         10 |        262 |
+| datashow_tcc                                                                    |          5 |         97 |         61 |         49 |        207 |
+| paginas                                                                         |          9 |         16 |          3 |         14 |         33 |
+| paginas (Files)                                                                 |          7 |         15 |          3 |         13 |         31 |
+| paginas\migrations                                                              |          1 |          0 |          0 |          1 |          1 |
+| paginas\templates                                                               |          1 |          1 |          0 |          0 |          1 |
+| reservas                                                                        |         17 |        521 |          3 |        108 |        632 |
+| reservas (Files)                                                                |          9 |        235 |          2 |         82 |        319 |
+| reservas\migrations                                                             |          2 |         48 |          1 |          8 |         57 |
+| reservas\templates                                                              |          6 |        238 |          0 |         18 |        256 |
+| static                                                                          |          5 |        603 |         67 |         89 |        759 |
+| static\js                                                                       |          5 |        603 |         67 |         89 |        759 |
+| templates                                                                       |         27 |        408 |          0 |        181 |        589 |
+| templates\account                                                               |         17 |        290 |          0 |        123 |        413 |
+| templates\account (Files)                                                       |         16 |        286 |          0 |        121 |        407 |
+| templates\account\snippets                                                      |          1 |          4 |          0 |          2 |          6 |
+| templates\openid                                                                |          2 |         12 |          0 |          9 |         21 |
+| templates\socialaccount                                                         |          8 |        106 |          0 |         49 |        155 |
+| templates\socialaccount (Files)                                                 |          6 |         86 |          0 |         44 |        130 |
+| templates\socialaccount\snippets                                                |          2 |         20 |          0 |          5 |         25 |
+| usuarios                                                                        |          8 |         15 |          4 |         15 |         34 |
+| usuarios (Files)                                                                |          7 |         15 |          4 |         14 |         33 |
+| usuarios\migrations                                                             |          1 |          0 |          0 |          1 |          1 |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+
+| filename                                                                        | language        | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+
+| c:\Users\taylo\datashow_tcc\README.md                                           | Markdown        |          2 |          0 |          2 |          4 |
+| c:\Users\taylo\datashow_tcc\datashow_tcc\__init__.py                            | Python          |          0 |          0 |          1 |          1 |
+| c:\Users\taylo\datashow_tcc\datashow_tcc\asgi.py                                | Python          |          4 |          8 |          5 |         17 |
+| c:\Users\taylo\datashow_tcc\datashow_tcc\settings.py                            | Python          |         81 |         29 |         35 |        145 |
+| c:\Users\taylo\datashow_tcc\datashow_tcc\urls.py                                | Python          |          8 |         16 |          3 |         27 |
+| c:\Users\taylo\datashow_tcc\datashow_tcc\wsgi.py                                | Python          |          4 |          8 |          5 |         17 |
+| c:\Users\taylo\datashow_tcc\db.sqlite3                                          | Database        |        232 |          0 |          3 |        235 |
+| c:\Users\taylo\datashow_tcc\manage.py                                           | Python          |         15 |          3 |          5 |         23 |
+| c:\Users\taylo\datashow_tcc\paginas\__init__.py                                 | Python          |          0 |          0 |          1 |          1 |
+| c:\Users\taylo\datashow_tcc\paginas\admin.py                                    | Python          |          1 |          1 |          2 |          4 |
+| c:\Users\taylo\datashow_tcc\paginas\apps.py                                     | Python          |          4 |          0 |          3 |          7 |
+| c:\Users\taylo\datashow_tcc\paginas\migrations\__init__.py                      | Python          |          0 |          0 |          1 |          1 |
+| c:\Users\taylo\datashow_tcc\paginas\models.py                                   | Python          |          1 |          1 |          2 |          4 |
+| c:\Users\taylo\datashow_tcc\paginas\templates\home.html                         | Django Template |          1 |          0 |          0 |          1 |
+| c:\Users\taylo\datashow_tcc\paginas\tests.py                                    | Python          |          1 |          1 |          2 |          4 |
+| c:\Users\taylo\datashow_tcc\paginas\urls.py                                     | Python          |          5 |          0 |          1 |          6 |
+| c:\Users\taylo\datashow_tcc\paginas\views.py                                    | Python          |          3 |          0 |          2 |          5 |
+| c:\Users\taylo\datashow_tcc\reservas\__init__.py                                | Python          |          0 |          0 |          1 |          1 |
+| c:\Users\taylo\datashow_tcc\reservas\admin.py                                   | Python          |         20 |          1 |          9 |         30 |
+| c:\Users\taylo\datashow_tcc\reservas\apps.py                                    | Python          |          4 |          0 |          3 |          7 |
+| c:\Users\taylo\datashow_tcc\reservas\choices.py                                 | Python          |         11 |          0 |          0 |         11 |
+| c:\Users\taylo\datashow_tcc\reservas\forms.py                                   | Python          |         58 |          0 |         15 |         73 |
+| c:\Users\taylo\datashow_tcc\reservas\migrations\0001_initial.py                 | Python          |         48 |          1 |          7 |         56 |
+| c:\Users\taylo\datashow_tcc\reservas\migrations\__init__.py                     | Python          |          0 |          0 |          1 |          1 |
+| c:\Users\taylo\datashow_tcc\reservas\models.py                                  | Python          |         32 |          0 |         13 |         45 |
+| c:\Users\taylo\datashow_tcc\reservas\templates\form_agendar_create.html         | Django Template |         44 |          0 |          4 |         48 |
+| c:\Users\taylo\datashow_tcc\reservas\templates\form_agendar_update.html         | Django Template |         39 |          0 |          3 |         42 |
+| c:\Users\taylo\datashow_tcc\reservas\templates\form_reservar_create.html        | Django Template |         44 |          0 |          5 |         49 |
+| c:\Users\taylo\datashow_tcc\reservas\templates\form_reservar_delete.html        | Django Template |          5 |          0 |          1 |          6 |
+| c:\Users\taylo\datashow_tcc\reservas\templates\form_reservar_update.html        | Django Template |         40 |          0 |          3 |         43 |
+| c:\Users\taylo\datashow_tcc\reservas\templates\tabela_reservas.html             | Django Template |         66 |          0 |          2 |         68 |
+| c:\Users\taylo\datashow_tcc\reservas\tests.py                                   | Python          |          1 |          1 |          2 |          4 |
+| c:\Users\taylo\datashow_tcc\reservas\urls.py                                    | Python          |         14 |          0 |          2 |         16 |
+| c:\Users\taylo\datashow_tcc\reservas\views.py                                   | Python          |         95 |          0 |         37 |        132 |
+| c:\Users\taylo\datashow_tcc\static\js\desabilitar_horarios_passados.js          | JavaScript      |         73 |          3 |          3 |         79 |
+| c:\Users\taylo\datashow_tcc\static\js\jquery-3.6.3.min.js                       | JavaScript      |          1 |          1 |          1 |          3 |
+| c:\Users\taylo\datashow_tcc\static\js\jquery.mask.js                            | JavaScript      |        472 |         60 |         73 |        605 |
+| c:\Users\taylo\datashow_tcc\static\js\select_horarios_disponiveis.js            | JavaScript      |         27 |          3 |          7 |         37 |
+| c:\Users\taylo\datashow_tcc\static\js\select_turmas_por_curso.js                | JavaScript      |         30 |          0 |          5 |         35 |
+| c:\Users\taylo\datashow_tcc\templates\account\account_inactive.html             | Django Template |          7 |          0 |          5 |         12 |
+| c:\Users\taylo\datashow_tcc\templates\account\base.html                         | Django Template |         41 |          0 |          3 |         44 |
+| c:\Users\taylo\datashow_tcc\templates\account\email.html                        | Django Template |         58 |          0 |         17 |         75 |
+| c:\Users\taylo\datashow_tcc\templates\account\email_confirm.html                | Django Template |         18 |          0 |         14 |         32 |
+| c:\Users\taylo\datashow_tcc\templates\account\login.html                        | Django Template |         31 |          0 |         15 |         46 |
+| c:\Users\taylo\datashow_tcc\templates\account\logout.html                       | Django Template |         14 |          0 |          8 |         22 |
+| c:\Users\taylo\datashow_tcc\templates\account\password_change.html              | Django Template |         12 |          0 |          5 |         17 |
+| c:\Users\taylo\datashow_tcc\templates\account\password_reset.html               | Django Template |         17 |          0 |          8 |         25 |
+| c:\Users\taylo\datashow_tcc\templates\account\password_reset_done.html          | Django Template |         11 |          0 |          6 |         17 |
+| c:\Users\taylo\datashow_tcc\templates\account\password_reset_from_key.html      | Django Template |         16 |          0 |          4 |         20 |
+| c:\Users\taylo\datashow_tcc\templates\account\password_reset_from_key_done.html | Django Template |          7 |          0 |          3 |         10 |
+| c:\Users\taylo\datashow_tcc\templates\account\password_set.html                 | Django Template |         11 |          0 |          5 |         16 |
+| c:\Users\taylo\datashow_tcc\templates\account\signup.html                       | Django Template |         15 |          0 |          7 |         22 |
+| c:\Users\taylo\datashow_tcc\templates\account\signup_closed.html                | Django Template |          7 |          0 |          5 |         12 |
+| c:\Users\taylo\datashow_tcc\templates\account\snippets\already_logged_in.html   | Django Template |          4 |          0 |          2 |          6 |
+| c:\Users\taylo\datashow_tcc\templates\account\verification_sent.html            | Django Template |          7 |          0 |          6 |         13 |
+| c:\Users\taylo\datashow_tcc\templates\account\verified_email_required.html      | Django Template |         14 |          0 |         10 |         24 |
+| c:\Users\taylo\datashow_tcc\templates\openid\base.html                          | Django Template |          1 |          0 |          1 |          2 |
+| c:\Users\taylo\datashow_tcc\templates\openid\login.html                         | Django Template |         11 |          0 |          8 |         19 |
+| c:\Users\taylo\datashow_tcc\templates\socialaccount\authentication_error.html   | Django Template |          7 |          0 |          5 |         12 |
+| c:\Users\taylo\datashow_tcc\templates\socialaccount\base.html                   | Django Template |          1 |          0 |          1 |          2 |
+| c:\Users\taylo\datashow_tcc\templates\socialaccount\connections.html            | Django Template |         38 |          0 |         17 |         55 |
+| c:\Users\taylo\datashow_tcc\templates\socialaccount\login.html                  | Django Template |         16 |          0 |          6 |         22 |
+| c:\Users\taylo\datashow_tcc\templates\socialaccount\login_cancelled.html        | Django Template |          8 |          0 |          8 |         16 |
+| c:\Users\taylo\datashow_tcc\templates\socialaccount\signup.html                 | Django Template |         16 |          0 |          7 |         23 |
+| c:\Users\taylo\datashow_tcc\templates\socialaccount\snippets\login_extra.html   | Django Template |          2 |          0 |          2 |          4 |
+| c:\Users\taylo\datashow_tcc\templates\socialaccount\snippets\provider_list.html | Django Template |         18 |          0 |          3 |         21 |
+| c:\Users\taylo\datashow_tcc\usuarios\__init__.py                                | Python          |          0 |          0 |          1 |          1 |
+| c:\Users\taylo\datashow_tcc\usuarios\admin.py                                   | Python          |          1 |          1 |          2 |          4 |
+| c:\Users\taylo\datashow_tcc\usuarios\apps.py                                    | Python          |          4 |          0 |          3 |          7 |
+| c:\Users\taylo\datashow_tcc\usuarios\migrations\__init__.py                     | Python          |          0 |          0 |          1 |          1 |
+| c:\Users\taylo\datashow_tcc\usuarios\models.py                                  | Python          |          1 |          1 |          2 |          4 |
+| c:\Users\taylo\datashow_tcc\usuarios\tests.py                                   | Python          |          1 |          1 |          2 |          4 |
+| c:\Users\taylo\datashow_tcc\usuarios\urls.py                                    | Python          |          7 |          0 |          2 |          9 |
+| c:\Users\taylo\datashow_tcc\usuarios\views.py                                   | Python          |          1 |          1 |          2 |          4 |
+| Total                                                                           |                 |      1,909 |        141 |        466 |      2,516 |
++---------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+

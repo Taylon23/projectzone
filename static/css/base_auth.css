@@ -1,0 +1,54 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9ffff;
+}
+
+#NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#logomarca{
+  width: 13em;
+  height: 7em;
+  object-fit: cover;
+}
+
+#Rodape {
+  background-color: #0655a4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.2em;
+}
+#Rodape p {
+  margin: 0.5em 0;
+}
+#Rodape a {
+  color: #fff;
+  transition: text-decoration 0.3s ease-in;
+}
+#Rodape a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 541px){
+  #NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

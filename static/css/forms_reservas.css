@@ -1,0 +1,90 @@
+form {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0.25em 0.5em #0000001a;
+  max-width: 31.25em;
+  margin: 0 auto;
+}
+
+#title-form{
+  text-align: center;
+  margin: .6em 0;
+}
+#mensagem-horario{
+  text-align: center;
+  margin: .6em 0;
+  color: #FF5733;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.3125em;
+  display: block;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 0.625em;
+  border: .0625em solid #ccc;
+  border-radius: 0.25em;
+  font-size: 1em;
+}
+
+input[type="date"] {
+  width: 50%;
+  padding: 0.5em;
+  margin-bottom: 0.625em;
+  border: 0.0625em solid #ccc;
+  border-radius: 0.25em;
+  font-size: 1em;
+}
+
+#id_turmas_container {
+  display: flex;
+}
+
+#id_turmas_container label {
+  margin: 0.1875em;
+}
+
+#form-horario {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.9375em 1.5625em;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+  font-size: 1.125em;
+  width: 100%;
+  margin: 0.3em 0;
+  transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+  opacity: 90%;
+}
+
+#submit-button-delete{
+  background-color: red;
+}
+
+#error-message ul li {
+  color: #ff0000;
+  margin: 0.5em 0;
+  font-size: 1.1em;
+}
+
+#current_user {
+  display: none;
+}

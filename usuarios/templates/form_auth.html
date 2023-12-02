@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title%}
+<title>Login</title>
+{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/form_auth.css' %}">
+{% endblock %}
+{% block content %}
+<div id="content">
+    <form method="post">
+        {% csrf_token %}
+        <h1>Seja Bem-vindo(a)</h1>
+        <div class="form-group">
+            <label for="id_login">Usuário:</label>
+            {{ form.username }}
+        </div>
+        <div class="form-group">
+            <label for="id_password">Senha:</label>
+            {{ form.password }}
+        </div>
+        {% if form.non_field_errors %}
+        <div id="error-message">{{ form.non_field_errors }}</div>
+        {% endif %}
+        <button type="submit">
+            <p>Logar <i class="fas fa-arrow-right"></i></p>
+        </button>
+    </form>
+    <img src="{% static 'img/foto_auth_form.png' %}" alt="foto_auth_form" id="img-form">
+</div>
+{% endblock %}

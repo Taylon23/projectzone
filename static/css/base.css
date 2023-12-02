@@ -1,0 +1,127 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9ffff;
+}
+#NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  background-color: #0655a4;
+  color: #fff;
+}
+
+#logomarca{
+  width: 13em;
+  height: 7em;
+  object-fit: cover;
+}
+
+#menu-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#menu-topo li a {
+  color: #fff;
+  transition: color 0.3s ease-in;
+}
+
+#menu-topo li a:hover {
+  color: #d4dfee;
+}
+#content {
+  min-height: 90%;
+  margin: 1em 0;
+}
+
+#Rodape {
+  background-color: #0655a4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.2em;
+}
+#Rodape p {
+  margin: 0.5em 0;
+  text-align: center;
+}
+#Rodape a {
+  color: #fff;
+  transition: text-decoration 0.3s ease-in;
+}
+#Rodape a:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark){
+  #menu-toggle{
+    color: #fff;
+  }
+}
+
+@media ((min-width:542px) and (max-width:860px)) {
+  #NavBar{
+    flex-direction: column;
+    height: 10em;
+  }
+  #menu-topo{
+    width: 100%;
+    justify-content: space-evenly;
+
+  }
+}
+
+/* Adicione isso ao seu arquivo CSS */
+@media screen and (max-width: 541px) {
+  #menu-topo {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 4.8em;
+    left: 0;
+    background-color: #0655a4;
+  }
+
+  #menu-topo.active {
+    display: flex;
+  }
+
+  #menu-topo li {
+    padding: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+  }
+  #logomarca{
+    width: 12em;
+    height: 5em;
+  }
+}

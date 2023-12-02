@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title%}
+<title>Reservar</title>
+{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/forms_reservas.css' %}">
+{% endblock %}
+{% block content %}
+
+
+<form method="post" id="reservation-form">
+    {% csrf_token %}
+    <h1 id="title-form">Reservar para hoje</h1>
+    <h3 id="mensagem-horario"></h3>
+
+
+    <div class="form-group">
+        {{ form.projetor.label_tag }}
+        {{ form.projetor }}
+    </div>
+    <div class="form-group">
+        {{ form.curso.label_tag }}
+        {{ form.curso }}
+    </div>
+    <div class="form-group">
+        <label for="id_turmas">Turmas:</label>
+        <div id="id_turmas_container">
+            <!-- Aqui as turmas relacionadas ao curso serão inseridas via JavaScript -->
+        </div>
+    </div>
+    <div class="form-group">
+        {{ form.data.label_tag }}
+        {{ form.data }}
+    </div>
+    <div class="form-group" id="form-horario">
+        {{ form.horario.label_tag }}
+        {{ form.horario }}
+    </div>
+    {% if form.non_field_errors %}
+    <div id="error-message">{{ form.non_field_errors }}</div>
+    {% endif %}
+    <button type="submit" class="submit-button">Reservar</button>
+</form>
+<input type="hidden" id="current_user" value="{{ request.user.username }}">
+{% endblock %}
+{% block script %}
+<script src="{% static 'js/select_materias_por_curso.js' %}"></script>
+<script src="{% static 'js/select_turmas_por_curso.js' %}"></script>
+<script src="{% static 'js/desabilitar_horarios_passados.js' %}"></script>
+<script src="{% static 'js/mensagem_horario_disponivel.js' %}"></script>
+<script src="{% static 'js/select_horarios_disponiveis.js' %}"></script>
+{% endblock %}

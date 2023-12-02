@@ -1,0 +1,55 @@
+/* Adicione estilos personalizados aqui */
+.Conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-logout {
+  max-width: 400px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.content-button-del-back {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#sair {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button#sair:hover {
+  background-color: #bb2d3b;
+}
+
+button#voltar {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button#voltar:hover {
+  background-color: #0056b3;
+}
+
+/* Adicione mais estilos conforme necessário */

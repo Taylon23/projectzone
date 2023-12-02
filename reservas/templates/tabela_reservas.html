@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title%}
+<title>Tabela Reservas</title>
+{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/tabela_reservas.css' %}">
+{% endblock %}
+{% block content %}
+<div class="reservas-table-container">
+    <!-- Tabela 1: Reservas para hoje -->
+    <table class="reservas-table">
+        <caption>Reservas para hoje</caption>
+        <tr>
+            <th>Projetor</th>
+            <th>Data</th>
+            <th>Turma</th>
+            <th>Ações</th>
+        </tr>
+        {% for reserva in reservas %}
+        <tr>
+            <td>{{ reserva.projetor }}</td>
+            <td>{{ reserva.data }}</td>
+            <td>{% for turma in reserva.turmas.all %}
+                {{ turma }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+            </td>
+            <td>
+                {% if reserva.data == hoje %}
+                <a href="{% url 'reserva-update' reserva.pk %}" id="edit-icon"><i class="fas fa-edit"></i></a>
+                {% else %}
+                <a href="{% url 'agendar-update' reserva.pk %}" id="edit-icon"><i class="fas fa-edit"></i></a>
+                {% endif %}
+                <a href="{% url 'reserva-delete' reserva.pk %}" id="trash-icon"><i class="fas fa-trash"></i></a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="4">Nenhuma reserva para hoje.</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <!-- Tabela 2: Reservas Futuras -->
+    <table class="reservas-table">
+        <caption>Reservas Futuras</caption>
+        <tr>
+            <th>Projetor</th>
+            <th>Data</th>
+            <th>Turma</th>
+            <th>Ações</th>
+        </tr>
+        {% for reserva in reservas_futuras %}
+        <tr>
+            <td>{{ reserva.projetor }}</td>
+            <td>{{ reserva.data }}</td>
+            <td>{% for turma in reserva.turmas.all %}
+                {{ turma }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+            </td>
+            <td>
+                {% if reserva.data == hoje %}
+                <a href="{% url 'reserva-update' reserva.pk %}" id="edit-icon"><i class="fas fa-edit"></i></a>
+                {% else %}
+                <a href="{% url 'agendar-update' reserva.pk %}" id="edit-icon"><i class="fas fa-edit"></i></a>
+                {% endif %}
+                <a href="{% url 'reserva-delete' reserva.pk %}" id="trash-icon"><i class="fas fa-trash"></i></a>
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="4">Nenhuma reserva futura encontrada.</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <!-- Tabela 3: Todas as Reservas -->
+    <table class="reservas-table">
+        <caption>Todas as Reservas</caption>
+        <tr>
+            <th>Projetor</th>
+            <th>Data</th>
+            <th>Turma</th>
+        </tr>
+        {% for reserva in reservas_all %}
+        <tr>
+            <td>{{ reserva.projetor }}</td>
+            <td>{{ reserva.data }}</td>
+            <td>{% for turma in reserva.turmas.all %}
+                {{ turma }}{% if not forloop.last %}, {% endif %}
+                {% endfor %}
+            </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="4">Nenhuma reserva encontrada.</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}
